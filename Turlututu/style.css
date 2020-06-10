@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+header{
+    max-height:800px;
+    max-width: 100%;
+    min-height: 350px;
+    background-color: #1e93cc;
+    overflow: hidden;
+}
+
+.container{
+    /*border:1px solid red; */
+    margin: auto;
+    padding: auto;
+    height: 150px;
+    width: 370px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.image{
+    border:1px solid yellow;
+    width: 150px;
+    height:150px;
+    margin-left:150px;
+    margin-top: auto;
+    position: relative;
+    
+    
+    
+}
+
+button{
+    background-color: #e99102;
+    border-radius:7px;
+    border:1px solid white;
+    height:50px;
+    width:250px;
+    font-size: 22px;
+    color:white;
+    
+}
+
+h2{
+    color: white;
+}
+
+#lignet{
+    /*border:1px solid red; */
+    height: 80px;
+    font-size:16pt;
+    text-align: center;
+}
+
+.container2{
+    height: 400px;
+    background-color: #1e93cc;
+    color: white;
+    margin-top:-10px;
+    
+}
+
+.column-left{
+    margin-left:100px;
+    position: absolute;
+    margin-top:70px;
+   /* border:1px solid red; */
+   /* column-count:; */
+}
+
+.column-right{
+    margin-left:820px;
+    position: absolute;
+    margin-top:70px;
+   /* border:1px solid yellow; */
+}
+
+.container3{
+    height: 350px;
+    background-color: #eeeeee;
+    border:1px solid yellow;
+    margin: auto;
+    
+    
+}
+
+#copyright{
+    color:white;
+    margin-left: 1300px;
+}

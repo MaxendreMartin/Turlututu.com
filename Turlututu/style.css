@@ -1,8 +1,26 @@
-body{
-    margin:0;
-    box-sizing: border-box;
+@font-face{
+    font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bloc{
+    border:1px solid yellow;
+    max-width: 80%;
+    margin:auto;  
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+/*******Navigation*******/
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +31,7 @@ ul {
 
 li {
     float: left;
+    
 }
 
 li a {
@@ -23,98 +42,93 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
+/*******header*******/
 
 header{
-    max-height:800px;
-    max-width: 100%;
-    min-height: 350px;
     background-color: #1e93cc;
-    overflow: hidden;
 }
 
-.container{
-    /*border:1px solid red; */
-    margin: auto;
-    padding: auto;
-    height: 150px;
-    width: 370px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    
+header> .bloc: section{
+    display: inline-block;
+    font-size: 20px;
 }
 
-.image{
-    border:1px solid yellow;
-    width: 150px;
-    height:150px;
-    margin-left:150px;
-    margin-top: auto;
-    position: relative;
-    
-    
-    
+header> .bloc: img, header> .bloc: section{
+    margin:20px;
 }
 
 button{
     background-color: #e99102;
     border-radius:7px;
     border:1px solid white;
-    height:50px;
+    height:65px;
     width:250px;
     font-size: 22px;
     color:white;
+    display: inline-block;
     
 }
 
-h2{
-    color: white;
+.button2{
+    background-color: #165882;
+    height:65px;
+    width:250px;
+    font-size: 22px;
+    color:white;
+    display: inline-block;
+    text-decoration: none;  
+  
 }
 
-#lignet{
-    /*border:1px solid red; */
-    height: 80px;
-    font-size:16pt;
-    text-align: center;
-}
-
-.container2{
+/*******info*******/
+.container{
     height: 400px;
     background-color: #1e93cc;
     color: white;
-    margin-top:-10px;
+    
     
 }
 
-.column-left{
-    margin-left:100px;
-    position: absolute;
-    margin-top:70px;
-   /* border:1px solid red; */
-   /* column-count:; */
+.container> .bloc{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.column-right{
-    margin-left:820px;
-    position: absolute;
-    margin-top:70px;
-   /* border:1px solid yellow; */
+.container> .bloc article{
+    padding:15px;
+    font-size:18px;
 }
 
-.container3{
-    height: 350px;
+.container> .bloc article h2{
+    color:white;
+    text-align: left;
+}
+
+/*******partenaires*******/
+.container2{
+    text-align: center;
     background-color: #eeeeee;
     border:1px solid yellow;
-    margin: auto;
-    
+    padding: 50px;
+}
+
+.container2 img{
+    margin: 25px;
+}
+
+
+/*******div.bouton*******/
+.bouton{
+    text-align: center;
+    border:1px solid red;
+    height: 150px;
     
 }
 
+
+/*******footer*******/
 #copyright{
     color:white;
-    margin-left: 1300px;
+    float: right;
+    margin-right: 60px;
 }

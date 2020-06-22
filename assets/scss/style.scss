@@ -1,0 +1,171 @@
+$font1: "Open Sans";
+$font2: "Roboto";
+$colortxt: white;
+$colorbackground: #1e93cc;
+$colorbutton1: #e99102;
+$colorbutton2: #165882;
+$backcolornav: #333;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font2;
+}
+
+.bloc {
+    max-width: (100/10) * 8%;
+    margin: auto;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+/*******Navigation*******/
+nav {
+    ul {
+        padding-left: 150px;
+    }
+
+    li {
+        &:last-child {
+            float: right;
+            margin-right: 150px;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $backcolornav;
+}
+
+li {
+    float: left;
+    a {
+        display: block;
+        color: $colortxt;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
+
+/*******header*******/
+header {
+    background-color: $colorbackground;
+    height: 300px;
+}
+
+.flex {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.left {
+    float: left;
+    padding-right: 150px;
+}
+
+.blanc {
+    color: $colortxt;
+}
+
+button {
+    background-color: $colorbutton1;
+    border-radius: 7px;
+    border: 1px solid $colortxt;
+    height: 65px;
+    width: 250px;
+    font-size: 22px;
+    color: $colortxt;
+    display: inline-block;
+}
+
+.button2 {
+    background-color: $colorbutton2;
+    height: 65px;
+    width: 250px;
+    font-size: 22px;
+    color: $colortxt;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*******info*******/
+.container {
+    height: auto;
+    background-color: $colorbackground;
+    color: $colortxt;
+    .bloc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        article {
+            padding: 15px;
+            font-size: 18px;
+            text-align: left;
+        }
+        article h2 {
+            color: $colortxt;
+            text-align: left;
+        }
+        .message {
+            float: right;
+            margin-top: -100px;
+            margin-right: 20px;
+        }
+    }
+}
+
+/*******partenaires*******/
+.container2 {
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 50px;
+    img {
+        margin: 25px;
+    }
+}
+
+/*******div.bouton*******/
+.bouton {
+    text-align: center;
+    height: 200px;
+    padding-top: 80px;
+}
+
+.message {
+    float: right;
+    margin-top: -70px;
+    margin-right: 20px;
+}
+
+/*******footer*******/
+.copyright {
+    color: $colortxt;
+    float: right;
+    margin-right: 60px;
+}
+
+footer {
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+                border-right: 1px dotted $colortxt;
+            }
+        }
+    }
+}
